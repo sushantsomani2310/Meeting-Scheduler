@@ -11,7 +11,7 @@ class SlotValidator {
      */
     @Test
     fun isSlotAvailable(){
-        var util:Utility = Utility()
+        val util:Utility = Utility()
         assertFalse(util.getTimeConflicts("13:00","14:30","13:00","15:00"))
         assertFalse(util.getTimeConflicts("12:30","13:30","13:00","15:00"))
         assertTrue(util.getTimeConflicts("12:30","13:00","13:00","15:00"))
